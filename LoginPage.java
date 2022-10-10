@@ -45,7 +45,7 @@ public class LoginPage extends JFrame {
 						JOptionPane.showMessageDialog(null, "Login Failed");
 					}
 				} else {
-					JOptionPane.showMessageDialog(null, "Enter password Properly");
+					JOptionPane.showMessageDialog(null, "Enter password Properlya");
 				}
 
 			}
