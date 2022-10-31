@@ -8,7 +8,7 @@ public class InetDemo2{
             String hostname;
             scanner = new Scanner(System.in);
             hostname = scanner.nextLine();
-            InetAddress ip = InetAddress.getByName(hostname);
+            InetAddress ip = InetAddress.getByName("https://www.javatpoint.com/javaFX-tutorial");
             System.out.println("Host Name : "+ip.getHostName());
             System.out.println("Host Name : "+ip.getHostAddress());
         } catch (UnknownHostException e) {
