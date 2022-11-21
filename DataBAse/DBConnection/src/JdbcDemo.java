@@ -1,8 +1,8 @@
 import java.sql.*;
 public class JdbcDemo {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException {
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			DriverManager.registerDriver(new com.mysql.jdbc.Driver());
 			System.out.println("Driver Loaded");
 			String urlString = "jdbc:mysql:///AJP_PR";
 			Connection connection = DriverManager.getConnection(urlString,"root","");
@@ -16,9 +16,6 @@ public class JdbcDemo {
 			
 		
 		}catch (SQLException e) {
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
